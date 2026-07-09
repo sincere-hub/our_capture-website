@@ -120,6 +120,7 @@ filter:blur(40px);
     width:100%;
     height:100%;
     object-fit:cover;
+    animation:zoomHero 15s linear infinite;
 }
 
 .overlay{
@@ -163,13 +164,22 @@ filter:blur(40px);
 }
 
 .hero h1{
+
     font-family:'Playfair Display',serif;
-    font-size:clamp(3.8rem,8vw,6.5rem);
-    line-height:1;
-    font-weight:700;
-    margin-bottom:25px;
+
+    font-size:clamp(4rem,8vw,6.8rem);
+
+    line-height:1.02;
+
     letter-spacing:-2px;
-    text-shadow:0 10px 35px rgba(0,0,0,.55);
+
+    margin-bottom:28px;
+
+    color:#fff;
+
+    text-shadow:
+        0 8px 30px rgba(0,0,0,.45);
+
 }
 
 .hero-description{
@@ -384,4 +394,592 @@ filter:blur(40px);
 .about-btn:hover{
 
     transform:translateY(-5px);
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+
+    padding:120px 8%;
+
+    background:#080808;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#121212;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:45px 35px;
+
+    transition:.45s;
+
+    cursor:pointer;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-15px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.45);
+
+}
+
+.service-icon{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.service-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+color:white;
+
+text-decoration:none;
+
+z-index:99999;
+
+box-shadow:0 15px 35px rgba(37,211,102,.35);
+
+transition:.35s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+padding:120px 8%;
+background:#0f0f0f;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.testimonial-card{
+background:#171717;
+padding:40px;
+border-radius:20px;
+transition:.4s;
+}
+
+.testimonial-card:hover{
+transform:translateY(-10px);
+}
+
+.testimonial-card p{
+color:#d5d5d5;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.testimonial-card h4{
+color:#D4AF37;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.booking{
+
+padding:150px 8%;
+
+text-align:center;
+
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url(images/wedding-1.jpg);
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+}
+
+.booking h2{
+
+font-size:60px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:20px;
+
+}
+
+.booking p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+color:#ddd;
+
+}
+
+footer{
+
+padding:80px 8%;
+
+text-align:center;
+
+background:#050505;
+
+}
+
+.footer-social{
+
+margin:35px 0;
+
+display:flex;
+
+justify-content:center;
+
+gap:35px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-social a{
+
+color:white;
+
+transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+color:#D4AF37;
+
+}
+
+.copyright{
+
+margin-top:30px;
+
+color:#777;
+
+font-size:14px;
+
+}
+
+/* =========================
+CONTACT
+========================= */
+
+.contact{
+
+padding:120px 8%;
+
+background:#0b0b0b;
+
+}
+
+.contact-form{
+
+max-width:900px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:18px;
+
+border:none;
+
+outline:none;
+
+background:#181818;
+
+color:white;
+
+border-radius:12px;
+
+font-size:16px;
+
+}
+
+.contact-form textarea{
+
+grid-column:1/-1;
+
+resize:none;
+
+}
+
+.contact-form button{
+
+grid-column:1/-1;
+
+justify-self:center;
+
+}
+
+/* INSTAGRAM */
+
+.instagram{
+
+padding:120px 8%;
+
+background:#080808;
+
+}
+
+.instagram-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+.instagram-grid img{
+
+height:300px;
+
+width:100%;
+
+object-fit:cover;
+
+border-radius:20px;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.instagram-grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin:35px 0;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+color:white;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#D4AF37;
+
+}
+
+.footer-contact{
+
+margin:30px 0;
+
+line-height:2;
+
+}
+
+/* LOADER */
+
+#loader{
+
+position:fixed;
+
+inset:0;
+
+background:#000;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999999;
+
+transition:1s;
+
+}
+
+#loader h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:65px;
+
+letter-spacing:8px;
+
+color:#D4AF37;
+
+animation:pulse 1.6s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{opacity:.4;}
+
+50%{opacity:1;}
+
+100%{opacity:.4;}
+
+}
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ===========================
+   SCROLL PROGRESS BAR
+=========================== */
+
+.progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0;
+
+background:linear-gradient(90deg,#D4AF37,#FFD700);
+
+z-index:999999;
+
+transition:width .1s linear;
+
+}
+
+/* ===========================
+SOCIAL FLOAT
+=========================== */
+
+.social-fixed{
+
+position:fixed;
+
+left:25px;
+
+bottom:40px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+z-index:999;
+
+}
+
+.social-fixed a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+writing-mode:vertical-rl;
+
+transform:rotate(180deg);
+
+transition:.35s;
+
+}
+
+.social-fixed a:hover{
+
+color:#D4AF37;
+
+}
+
+body{
+
+cursor:none;
+
+}
+
+.cursor{
+
+width:20px;
+
+height:20px;
+
+border:2px solid #D4AF37;
+
+border-radius:50%;
+
+position:fixed;
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+transition:transform .08s;
+
+z-index:999999;
+
+}
+
+@keyframes zoomHero{
+
+0%{
+
+transform:scale(1);
+
+}
+
+100%{
+
+transform:scale(1.08);
+
+}
+
+}
+
+section{
+
+position:relative;
+
+}
+
+section::after{
+
+content:"";
+
+position:absolute;
+
+bottom:0;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:120px;
+
+height:2px;
+
+background:rgba(212,175,55,.3);
+
 }
