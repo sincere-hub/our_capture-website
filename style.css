@@ -1,985 +1,927 @@
-/* =========================
-   OUR CAPTURE
-   Premium Website
-========================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#000;
-    color:#fff;
-    overflow-x:hidden;
-}
-
-/* =========================
-   NAVIGATION
-========================= */
-
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:22px 8%;
-    z-index:1000;
-
-    background:rgba(8,8,8,.35);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-    transition:.4s;
-}
-
-.logo{
-    font-size:28px;
-    font-family:'Playfair Display',serif;
-    font-weight:700;
-    letter-spacing:2px;
-}
-
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:40px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    font-size:15px;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#D4AF37;
-}
-
-.book-btn{
-    text-decoration:none;
-    color:white;
-    border:1px solid #D4AF37;
-    padding:12px 24px;
-    border-radius:40px;
-    transition:.4s;
-}
-
-.book-btn:hover{
-    background:#D4AF37;
-    color:black;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-}
-
-.hero::after{
-
-content:"";
-
-position:absolute;
-
-width:700px;
-height:700px;
-
-right:-250px;
-top:-250px;
-
-background:radial-gradient(circle,
-rgba(212,175,55,.12),
-transparent 70%);
-
-pointer-events:none;
-
-z-index:1;
-
-filter:blur(40px);
-
-}
-
-.hero-video{
-    position:absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    animation:zoomHero 15s linear infinite;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:
-    linear-gradient(to bottom,
-    rgba(0,0,0,.25),
-    rgba(0,0,0,.65),
-    rgba(0,0,0,.92));
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-    padding-left:8%;
-    max-width:700px;
-}
-
-.small-text{
-    position:relative;
-    color:#D4AF37;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:20px;
-}
-
-.small-text::before{
-    content:"";
-    width:70px;
-    height:2px;
-    background:#D4AF37;
-    display:inline-block;
-    margin-right:15px;
-    vertical-align:middle;
-}
-
-.hero h1{
-
-    font-family:'Playfair Display',serif;
-
-    font-size:clamp(4rem,8vw,6.8rem);
-
-    line-height:1.02;
-
-    letter-spacing:-2px;
-
-    margin-bottom:28px;
-
-    color:#fff;
-
-    text-shadow:
-        0 8px 30px rgba(0,0,0,.45);
-
-}
-
-.hero-description{
-    font-size:18px;
-    line-height:1.8;
-    color:#ddd;
-    margin-bottom:40px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:20px;
-}
-
-.primary-btn,
-.secondary-btn{
-
-    text-decoration:none;
-    padding:16px 34px;
-    border-radius:50px;
-    transition:.4s;
-}
-
-.primary-btn{
-    background:#D4AF37;
-    color:black;
-    font-weight:600;
-}
-
-.primary-btn:hover{
-    transform:translateY(-8px);
-
-    box-shadow:
-    0 15px 40px rgba(212,175,55,.35);
-}
-
-.secondary-btn{
-    border:1px solid white;
-    color:white;
-}
-
-.secondary-btn:hover{
-    background:white;
-    color:black;
-}
-
-/* New Section */
-.whatsapp-btn{
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:15px 32px;
-    border-radius:50px;
-    font-weight:600;
-    transition:.4s;
-}
-
-.whatsapp-btn:hover{
-    transform:translateY(-4px);
-    background:#1ebe5d;
-}
-
-/* =========================
-   Scroll Indicator
-========================= */
-
-.scroll-indicator{
-    position:absolute;
-    bottom:40px;
-    left:50%;
-    transform:translateX(-50%);
-    width:30px;
-    height:50px;
-    border:2px solid white;
-    border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding-top:8px;
-    z-index:10;
-}
-
-.scroll-indicator span{
-    width:6px;
-    height:6px;
-    background:#D4AF37;
-    border-radius:50%;
-    animation:scroll 1.8s infinite;
-}
-
-@keyframes scroll{
-
-    0%{
-        transform:translateY(0);
-        opacity:1;
-    }
-
-    100%{
-        transform:translateY(18px);
-        opacity:0;
-    }
-}
-
-    /* =========================
-   TRUST SECTION
-========================= */
-
-.trust-section{
-    background:#111;
-    padding:90px 8%;
-}
-
-.trust-container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:40px;
-    text-align:center;
-}
-
-.trust-item h2{
-    font-size:48px;
-    color:#D4AF37;
-    margin-bottom:12px;
-    font-family:'Playfair Display',serif;
-}
-
-.trust-item p{
-    color:#ddd;
-    font-size:17px;
-    letter-spacing:1px;
-}
-/* =========================
-   ABOUT
-========================= */
-
-.about{
-
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
-
-    align-items:center;
-
-    padding:120px 8%;
-
-    background:#000;
-}
-
-.about-image img{
-
-    width:100%;
-    border-radius:20px;
-
-    display:block;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.5);
-}
-
-.about-content span{
-
-    color:#D4AF37;
-
-    letter-spacing:3px;
-
-    font-size:14px;
-}
-
-.about-content h2{
-
-    margin:20px 0;
-
-    font-size:50px;
-
-    font-family:'Playfair Display',serif;
-
-    line-height:1.2;
-}
-
-.about-content p{
-
-    color:#ccc;
-
-    line-height:1.9;
-
-    margin-bottom:20px;
-
-    font-size:17px;
-}
-
-.about-btn{
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    background:#D4AF37;
-
-    color:black;
-
-    text-decoration:none;
-
-    padding:15px 35px;
-
-    border-radius:50px;
-
-    font-weight:600;
-
-    transition:.4s;
-}
-
-.about-btn:hover{
-
-    transform:translateY(-5px);
-}
-
-/* =========================
-   SERVICES
-========================= */
-
-.services{
-
-    padding:120px 8%;
-
-    background:#080808;
-
-}
-
-.services-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-}
-
-.service-card{
-
-    background:#121212;
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:24px;
-
-    padding:45px 35px;
-
-    transition:.45s;
-
-    cursor:pointer;
-
-}
-
-.service-card:hover{
-
-    transform:translateY(-15px);
-
-    border-color:#D4AF37;
-
-    box-shadow:0 25px 50px rgba(0,0,0,.45);
-
-}
-
-.service-icon{
-
-    font-size:48px;
-
-    margin-bottom:20px;
-
-}
-
-.service-card h3{
-
-    font-family:'Playfair Display',serif;
-
-    font-size:30px;
-
-    margin-bottom:18px;
-
-}
-
-.service-card p{
-
-    color:#cfcfcf;
-
-    line-height:1.8;
-
-}
-
-/* =========================
-   WHATSAPP
-========================= */
-
-.whatsapp{
-
-position:fixed;
-
-right:25px;
-
-bottom:25px;
-
-width:65px;
-
-height:65px;
-
-border-radius:50%;
-
-background:#25D366;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:30px;
-
-color:white;
-
-text-decoration:none;
-
-z-index:99999;
-
-box-shadow:0 15px 35px rgba(37,211,102,.35);
-
-transition:.35s;
-
-}
-
-.whatsapp:hover{
-
-transform:scale(1.1);
-
-}
-
-/* TESTIMONIALS */
-
-.testimonials{
-padding:120px 8%;
-background:#0f0f0f;
-}
-
-.testimonial-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-}
-
-.testimonial-card{
-background:#171717;
-padding:40px;
-border-radius:20px;
-transition:.4s;
-}
-
-.testimonial-card:hover{
-transform:translateY(-10px);
-}
-
-.testimonial-card p{
-color:#d5d5d5;
-line-height:1.8;
-margin-bottom:20px;
-}
-
-.testimonial-card h4{
-color:#D4AF37;
-margin-bottom:15px;
-font-size:22px;
-}
-
-.booking{
-
-padding:150px 8%;
-
-text-align:center;
-
-background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url(images/wedding-1.jpg);
-
-background-size:cover;
-
-background-position:center;
-
-background-attachment:fixed;
-
-}
-
-.booking h2{
-
-font-size:60px;
-
-font-family:'Playfair Display',serif;
-
-margin-bottom:20px;
-
-}
-
-.booking p{
-
-max-width:700px;
-
-margin:auto;
-
-line-height:1.8;
-
-margin-bottom:40px;
-
-color:#ddd;
-
-}
-
-footer{
-
-padding:80px 8%;
-
-text-align:center;
-
-background:#050505;
-
-}
-
-.footer-social{
-
-margin:35px 0;
-
-display:flex;
-
-justify-content:center;
-
-gap:35px;
-
-flex-wrap:wrap;
-
-}
-
-.footer-social a{
-
-color:white;
-
-transition:.3s;
-
-}
-
-.footer-social a:hover{
-
-color:#D4AF37;
-
-}
-
-.copyright{
-
-margin-top:30px;
-
-color:#777;
-
-font-size:14px;
-
-}
-
-/* =========================
-CONTACT
-========================= */
-
-.contact{
-
-padding:120px 8%;
-
-background:#0b0b0b;
-
-}
-
-.contact-form{
-
-max-width:900px;
-
-margin:auto;
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:25px;
-
-}
-
-.contact-form input,
-.contact-form textarea{
-
-padding:18px;
-
-border:none;
-
-outline:none;
-
-background:#181818;
-
-color:white;
-
-border-radius:12px;
-
-font-size:16px;
-
-}
-
-.contact-form textarea{
-
-grid-column:1/-1;
-
-resize:none;
-
-}
-
-.contact-form button{
-
-grid-column:1/-1;
-
-justify-self:center;
-
-}
-
-/* INSTAGRAM */
-
-.instagram{
-
-padding:120px 8%;
-
-background:#080808;
-
-}
-
-.instagram-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:20px;
-
-}
-
-.instagram-grid img{
-
-height:300px;
-
-width:100%;
-
-object-fit:cover;
-
-border-radius:20px;
-
-transition:.4s;
-
-cursor:pointer;
-
-}
-
-.instagram-grid img:hover{
-
-transform:scale(1.05);
-
-}
-
-.footer-links{
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-margin:35px 0;
-
-flex-wrap:wrap;
-
-}
-
-.footer-links a{
-
-color:white;
-
-transition:.3s;
-
-}
-
-.footer-links a:hover{
-
-color:#D4AF37;
-
-}
-
-.footer-contact{
-
-margin:30px 0;
-
-line-height:2;
-
-}
-
-/* LOADER */
-
-#loader{
-
-position:fixed;
-
-inset:0;
-
-background:#000;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-z-index:999999;
-
-transition:1s;
-
-}
-
-#loader h1{
-
-font-family:'Playfair Display',serif;
-
-font-size:65px;
-
-letter-spacing:8px;
-
-color:#D4AF37;
-
-animation:pulse 1.6s infinite;
-
-}
-
-@keyframes pulse{
-
-0%{opacity:.4;}
-
-50%{opacity:1;}
-
-100%{opacity:.4;}
-
-}
-
-.hidden{
-
-opacity:0;
-
-transform:translateY(80px);
-
-transition:1s;
-
-}
-
-.show{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-/* ===========================
-   SCROLL PROGRESS BAR
-=========================== */
-
-.progress-bar{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-height:4px;
-
-width:0;
-
-background:linear-gradient(90deg,#D4AF37,#FFD700);
-
-z-index:999999;
-
-transition:width .1s linear;
-
-}
-
-/* ===========================
-SOCIAL FLOAT
-=========================== */
-
-.social-fixed{
-
-position:fixed;
-
-left:25px;
-
-bottom:40px;
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
-z-index:999;
-
-}
-
-.social-fixed a{
-
-color:white;
-
-text-decoration:none;
-
-font-size:13px;
-
-letter-spacing:2px;
-
-writing-mode:vertical-rl;
-
-transform:rotate(180deg);
-
-transition:.35s;
-
-}
-
-.social-fixed a:hover{
-
-color:#D4AF37;
-
-}
-
-body{
-
-cursor:none;
-
-}
-
-.cursor{
-
-width:20px;
-
-height:20px;
-
-border:2px solid #D4AF37;
-
-border-radius:50%;
-
-position:fixed;
-
-pointer-events:none;
-
-transform:translate(-50%,-50%);
-
-transition:transform .08s;
-
-z-index:999999;
-
-}
-
-@keyframes zoomHero{
-
-0%{
-
-transform:scale(1);
-
-}
-
-100%{
-
-transform:scale(1.08);
-
-}
-
-}
-
-section{
-
-position:relative;
-
-}
-
-section::after{
-
-content:"";
-
-position:absolute;
-
-bottom:0;
-
-left:50%;
-
-transform:translateX(-50%);
-
-width:120px;
-
-height:2px;
-
-background:rgba(212,175,55,.3);
-
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Capture | Luxury Wedding Photography & Cinematic Films</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* =========================
+           OUR CAPTURE
+           Premium Website
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            z-index: 1000;
+            background: rgba(8, 8, 8, .35);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+            transition: .4s;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: #D4AF37;
+        }
+
+        .book-btn {
+            text-decoration: none;
+            color: white;
+            border: 1px solid #D4AF37;
+            padding: 12px 24px;
+            border-radius: 40px;
+            transition: .4s;
+        }
+
+        .book-btn:hover {
+            background: #D4AF37;
+            color: black;
+        }
+
+        /* =========================
+           FIXED SOCIAL SIDEBAR
+        ========================= */
+
+        .social-fixed {
+            position: fixed;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-fixed a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .1);
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: .3s;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .social-fixed a:hover {
+            background: #D4AF37;
+            color: #000;
+            border-color: #D4AF37;
+            transform: scale(1.1) translateX(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, .25);
+        }
+
+        /* Hide text, show icons */
+        .social-fixed a {
+            font-size: 0;
+        }
+
+        .social-fixed a::before {
+            font-size: 18px;
+        }
+
+        .social-fixed a:nth-child(1)::before {
+            content: "📷";
+        }
+
+        .social-fixed a:nth-child(2)::before {
+            content: "👍";
+        }
+
+        .social-fixed a:nth-child(3)::before {
+            content: "🎵";
+        }
+
+        /* Show text on hover */
+        .social-fixed a:hover {
+            font-size: 12px;
+            padding: 0 18px;
+            width: auto;
+            border-radius: 25px;
+            gap: 10px;
+        }
+
+        .social-fixed a:hover::before {
+            font-size: 16px;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            right: -250px;
+            top: -250px;
+            background: radial-gradient(circle, rgba(212, 175, 55, .12), transparent 70%);
+            pointer-events: none;
+            z-index: 1;
+            filter: blur(40px);
+        }
+
+        .hero-video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, .25), rgba(0, 0, 0, .65), rgba(0, 0, 0, .92));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 8%;
+            max-width: 700px;
+        }
+
+        .small-text {
+            position: relative;
+            color: #D4AF37;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .small-text::before {
+            content: "";
+            width: 70px;
+            height: 2px;
+            background: #D4AF37;
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3.8rem, 8vw, 6.5rem);
+            line-height: 1;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: -2px;
+            text-shadow: 0 10px 35px rgba(0, 0, 0, .55);
+        }
+
+        .hero-description {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ddd;
+            margin-bottom: 40px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            text-decoration: none;
+            padding: 16px 34px;
+            border-radius: 50px;
+            transition: .4s;
+        }
+
+        .primary-btn {
+            background: #D4AF37;
+            color: black;
+            font-weight: 600;
+        }
+
+        .primary-btn:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, .35);
+        }
+
+        .secondary-btn {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: .4s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-4px);
+            background: #1ebe5d;
+        }
+
+        /* =========================
+           Scroll Indicator
+        ========================= */
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 8px;
+            z-index: 10;
+        }
+
+        .scroll-indicator span {
+            width: 6px;
+            height: 6px;
+            background: #D4AF37;
+            border-radius: 50%;
+            animation: scroll 1.8s infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(18px);
+                opacity: 0;
+            }
+        }
+
+        /* =========================
+           TRUST SECTION
+        ========================= */
+
+        .trust-section {
+            background: #111;
+            padding: 90px 8%;
+        }
+
+        .trust-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .trust-item h2 {
+            font-size: 48px;
+            color: #D4AF37;
+            margin-bottom: 12px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .trust-item p {
+            color: #ddd;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+            padding: 120px 8%;
+            background: #000;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+        }
+
+        .about-content span {
+            color: #D4AF37;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        .about-content h2 {
+            margin: 20px 0;
+            font-size: 50px;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.2;
+        }
+
+        .about-content p {
+            color: #ccc;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        .about-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #D4AF37;
+            color: black;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: .4s;
+        }
+
+        .about-btn:hover {
+            transform: translateY(-5px);
+        }
+
+        /* =========================
+           PORTFOLIO
+        ========================= */
+
+        .portfolio {
+            padding: 120px 8%;
+            background: #0b0b0b;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 70px;
+        }
+
+        .section-title span {
+            color: #D4AF37;
+            letter-spacing: 4px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            margin: 20px 0;
+        }
+
+        .section-title p {
+            color: #bdbdbd;
+            line-height: 1.8;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 22px;
+            cursor: pointer;
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            transition: .6s;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+            background: linear-gradient(to top, rgba(0, 0, 0, .85), transparent);
+            opacity: 0;
+            transition: .4s;
+        }
+
+        .portfolio-overlay h3 {
+            font-size: 28px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .portfolio-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        /* =========================
+           FOOTER / CONTACT
+        ========================= */
+
+        .footer {
+            background: #0a0a0a;
+            padding: 80px 8% 40px;
+            border-top: 1px solid rgba(255, 255, 255, .06);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: #999;
+            line-height: 1.8;
+            max-width: 350px;
+        }
+
+        .footer-links h4,
+        .footer-contact h4 {
+            color: #D4AF37;
+            font-size: 18px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: #aaa;
+            text-decoration: none;
+            margin-bottom: 12px;
+            transition: .3s;
+        }
+
+        .footer-links a:hover {
+            color: #D4AF37;
+            transform: translateX(5px);
+        }
+
+        .footer-contact p {
+            color: #ccc;
+            margin-bottom: 14px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-contact p i {
+            font-style: normal;
+            font-size: 18px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, .06);
+            padding-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            color: #aaa;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, .1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+        }
+
+        .footer-social a:hover {
+            background: #D4AF37;
+            color: black;
+            border-color: #D4AF37;
+            transform: translateY(-3px);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 992px) {
+            .about {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .trust-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: clamp(2.8rem, 6vw, 4.5rem);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 5%;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-content {
+                padding: 0 5%;
+                max-width: 100%;
+                text-align: center;
+                align-items: center;
+            }
+
+            .small-text::before {
+                display: none;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .trust-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 36px;
+            }
+
+            .about-content h2 {
+                font-size: 36px;
+            }
+
+            .scroll-indicator {
+                display: none;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .footer-brand p {
+                max-width: 100%;
+            }
+
+            .footer-contact p {
+                justify-content: center;
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+
+            /* Hide social sidebar on mobile */
+            .social-fixed {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trust-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.2rem, 5vw, 3.2rem);
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .primary-btn,
+            .secondary-btn,
+            .whatsapp-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .portfolio-card img {
+                height: 320px;
+            }
+
+            /* Hide social sidebar on small mobile */
+            .social-fixed {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =========================
+         FIXED SOCIAL SIDEBAR
+    ========================= -->
+    <div class="social-fixed">
+        <a href="https://www.instagram.com/our_capture_weddings" target="_blank" aria-label="Instagram">
+            Instagram
+        </a>
+        <a href="#" target="_blank" aria-label="Facebook">
+            Facebook
+        </a>
+        <a href="https://vt.tiktok.com/ZSX12sRvt/" target="_blank" aria-label="TikTok">
+            TikTok
+        </a>
+    </div>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+    <nav class="navbar">
+        <div class="logo">📸 Our Capture</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact" class="book-btn">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================
+         HERO
+    ========================= -->
+    <section class="hero" id="home">
+        <!-- Replace 'your-video.mp4' with your actual video file -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="your-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <span class="small-text">Premium Visual Storytelling</span>
+            <h1>Capture the<br />Moment</h1>
+            <p class="hero-description">
+                We craft timeless visual experiences — from weddings to brands,
+                every frame tells your story with elegance and emotion.
+            </p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="primary-btn">Explore Work</a>
+                <a href="#contact" class="secondary-btn">Get in Touch</a>
+                <a href="https://wa.me/0823655302" class="whatsapp-btn" target="_blank">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- =========================
+         TRUST SECTION
+    ========================= -->
+    <section class="trust-section">
+        <div class="trust-container">
+            <div class="trust-item">
+                <h2>5+</h2>
+                <p>Years of Excellence</p>
+            </div>
+            <div class="trust-item">
+                <h2>350+</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="trust-item">
+                <h2>1.2K</h2>
+                <p>Projects Delivered</p>
+            </div>
+            <div class="trust-item">
+                <h2>100%</h2>
+                <p>Client Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=600&fit=crop"
+                 alt="Photographer at work" />
+        </div>
+        <div class="about-content">
+            <span>About Us</span>
+            <h2>We Create Visual Stories That Last Forever</h2>
+            <p>
+                At Our Capture, we blend technical precision with artistic vision.
+                Whether it's a wedding, a corporate event, or a personal portrait,
+                we approach every project with the same dedication and passion.
+            </p>
+            <p>
+                Our team of award-winning photographers and editors work tirelessly
+                to ensure every pixel tells a part of your unique story.
+            </p>
+            <a href="#contact" class="about-btn">Let's Create Together</a>
+        </div>
+    </section>
+
+    <!-- =========================
+         PORTFOLIO
+    ========================= -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-title">
+            <span>Our Work</span>
+            <h2>Featured Projects</h2>
+            <p>
+                A curated selection of our finest captures — each one telling a
+                story of beauty, emotion, and authenticity.
+            </p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=520&fit=crop"
+                     alt="Wedding photography" />
+                <div class="portfolio-overlay">
+                    <h3>Wedding Bliss</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=600&h=520&fit=crop"
+                     alt="Portrait photography" />
+                <div class="portfolio-overlay">
+                    <h3>Portrait Elegance</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <img src="https://images.unsplash.com/photo-1470071459604-7b6a89a2b6fa?w=600&h=520&fit=crop"
+                     alt="Nature photography" />
+                <div class="portfolio-overlay">
+                    <h3>Nature's Canvas</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         FOOTER / CONTACT
+    ========================= -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <h3>📸 Our Capture</h3>
+                <p>
+                    Premium visual storytelling — capturing life's most beautiful
+                    moments with artistry and precision.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/our_capture_weddings" target="_blank" aria-label="Instagram">📷</a>
+                    <a href="#" target="_blank" aria-label="Facebook">👍</a>
+                    <a href="https://vt.tiktok.com/ZSX12sRvt/" target="_blank" aria-label="TikTok">🎵</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>📞 082 365 5302</p>
+                <p>✉️ Neluvhadal@gmail.com</p>
+                <p>📍 Limpopo • Gauteng • Cape Town • Durban</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Our Capture. All rights reserved. | Crafted with ❤️
+        </div>
+    </footer>
+
+</body>
+</html>

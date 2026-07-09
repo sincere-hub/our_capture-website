@@ -1,0 +1,59 @@
+// Loader
+
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+
+        loader.style.opacity = "0";
+
+        loader.style.visibility = "hidden";
+
+    },1200);
+
+});
+
+// Navbar background
+
+window.addEventListener("scroll",()=>{
+
+const nav=document.querySelector(".navbar");
+
+if(window.scrollY>60){
+
+nav.style.background="rgba(0,0,0,.75)";
+
+}
+
+else{
+
+nav.style.background="rgba(0,0,0,.35)";
+
+}
+
+});
+
+// Fade In Animation
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach(section=>{
+
+section.classList.add("hidden");
+
+observer.observe(section);
+
+});
