@@ -122,8 +122,10 @@ body{
 }
 
 .hero h1{
+    font-size:82px;
     font-family:'Playfair Display',serif;
-    font-size:72px;
+    font-weight:700;
+    text-shadow:0 5px 25px rgba(0,0,0,.4);
     line-height:1.1;
     margin-bottom:25px;
 }
@@ -168,6 +170,24 @@ body{
     background:white;
     color:black;
 }
+
+/* New Section */
+.whatsapp-btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 32px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-4px);
+    background:#1ebe5d;
+}
+
 /* =========================
    Scroll Indicator
 ========================= */
@@ -207,6 +227,8 @@ body{
         transform:translateY(18px);
         opacity:0;
     }
+}
+
     /* =========================
    TRUST SECTION
 ========================= */
