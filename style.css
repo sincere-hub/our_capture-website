@@ -1,0 +1,320 @@
+/* =========================
+   OUR CAPTURE
+   Premium Website
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    z-index:1000;
+
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(14px);
+}
+
+.logo{
+    font-size:28px;
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#D4AF37;
+}
+
+.book-btn{
+    text-decoration:none;
+    color:white;
+    border:1px solid #D4AF37;
+    padding:12px 24px;
+    border-radius:40px;
+    transition:.4s;
+}
+
+.book-btn:hover{
+    background:#D4AF37;
+    color:black;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-video{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding-left:8%;
+    max-width:700px;
+}
+
+.small-text{
+    color:#D4AF37;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:72px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero-description{
+    font-size:18px;
+    line-height:1.8;
+    color:#ddd;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.primary-btn{
+    background:#D4AF37;
+    color:black;
+    font-weight:600;
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+}
+
+.secondary-btn{
+    border:1px solid white;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:white;
+    color:black;
+}
+/* =========================
+   Scroll Indicator
+========================= */
+
+.scroll-indicator{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    width:30px;
+    height:50px;
+    border:2px solid white;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:8px;
+    z-index:10;
+}
+
+.scroll-indicator span{
+    width:6px;
+    height:6px;
+    background:#D4AF37;
+    border-radius:50%;
+    animation:scroll 1.8s infinite;
+}
+
+@keyframes scroll{
+
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(18px);
+        opacity:0;
+    }
+    /* =========================
+   TRUST SECTION
+========================= */
+
+.trust-section{
+    background:#111;
+    padding:90px 8%;
+}
+
+.trust-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+    text-align:center;
+}
+
+.trust-item h2{
+    font-size:48px;
+    color:#D4AF37;
+    margin-bottom:12px;
+    font-family:'Playfair Display',serif;
+}
+
+.trust-item p{
+    color:#ddd;
+    font-size:17px;
+    letter-spacing:1px;
+}
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+
+    align-items:center;
+
+    padding:120px 8%;
+
+    background:#000;
+}
+
+.about-image img{
+
+    width:100%;
+    border-radius:20px;
+
+    display:block;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+
+.about-content span{
+
+    color:#D4AF37;
+
+    letter-spacing:3px;
+
+    font-size:14px;
+}
+
+.about-content h2{
+
+    margin:20px 0;
+
+    font-size:50px;
+
+    font-family:'Playfair Display',serif;
+
+    line-height:1.2;
+}
+
+.about-content p{
+
+    color:#ccc;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+    font-size:17px;
+}
+
+.about-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#D4AF37;
+
+    color:black;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.about-btn:hover{
+
+    transform:translateY(-5px);
+}
