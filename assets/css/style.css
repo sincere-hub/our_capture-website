@@ -748,7 +748,8 @@ font-size:14px;
     transition:.4s;
 }
 
-.header.scrolled{
+.header.scrolled,
+.navbar.scrolled{
     background:rgba(0,0,0,.92);
     backdrop-filter:blur(20px);
     box-shadow:0 10px 30px rgba(0,0,0,.4);
@@ -968,3 +969,40 @@ footer{
 .whatsapp:hover{
     transform:scale(1.1);
 }
+
+/* Refined luxury visual system */
+:root{--ink:#080807;--surface:#12110e;--gold:#c8a463;--gold-light:#f0d9a2;--muted:#c9c4b8;}
+body{background:var(--ink);color:#f7f4ee;}
+.header{padding:22px 7%;border-bottom:1px solid rgba(240,217,162,.12);}
+.header.scrolled{background:rgba(8,8,7,.9);box-shadow:0 14px 45px rgba(0,0,0,.28);}
+.navbar{max-width:1440px;margin:0 auto;}
+.logo{font-size:1.45rem;letter-spacing:.18em;color:#f7f4ee;}
+.logo span{color:var(--gold);}
+.nav-menu{gap:clamp(16px,2.5vw,38px);}
+.nav-menu a{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(247,244,238,.78);}
+.nav-btn{padding:13px 25px;background:transparent;border:1px solid var(--gold);border-radius:0;color:var(--gold-light);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;}
+.nav-btn:hover{background:var(--gold);color:var(--ink);box-shadow:none;}
+.hero{min-height:780px;height:100svh;isolation:isolate;}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 50% 35%,transparent 0,rgba(0,0,0,.18) 38%,rgba(0,0,0,.8) 100%);}
+.hero-content{max-width:1000px;padding-top:80px;}
+.hero-content h3,.hero-content h4{font-size:.73rem;letter-spacing:.28em;color:var(--gold-light);}
+.hero-content h1{font-weight:600;letter-spacing:-.035em;text-shadow:0 8px 28px rgba(0,0,0,.35);}
+.hero-content p{max-width:650px;margin-left:auto;margin-right:auto;font-size:1rem;color:rgba(247,244,238,.82);}
+.primary-btn,.secondary-btn{border-radius:0;padding:16px 28px;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;}
+.primary-btn{background:var(--gold);}
+.secondary-btn{border-color:rgba(247,244,238,.7);}
+.about{padding:clamp(90px,12vw,170px) 8%;gap:clamp(40px,8vw,120px);background:linear-gradient(135deg,#0d0c0a 0%,#12100c 100%);}
+.about-image{border-radius:0;box-shadow:22px 22px 0 rgba(200,164,99,.14);}
+.about-image img{filter:saturate(.82) contrast(1.06);}
+.about-content span,.section-heading span{color:var(--gold);font-size:.7rem;letter-spacing:.24em;}
+.about-content h2,.section-heading h2{font-weight:600;letter-spacing:-.025em;}
+.about-content p{color:var(--muted);}
+.features{gap:10px 22px;}
+.features div{background:transparent;border-left:1px solid var(--gold);border-radius:0;padding:8px 12px;color:var(--muted);}
+.features div:hover{background:rgba(200,164,99,.1);transform:none;}
+@media (max-width:900px){.header{padding:18px 5%;}.nav-menu{display:none;}.nav-btn{padding:11px 16px;}.about{grid-template-columns:1fr;}.hero-content h1{font-size:clamp(3.25rem,13vw,5.5rem);}.hero-content p{font-size:.95rem;}.about-image{max-width:620px;}}
+@media (max-width:520px){.logo{font-size:1.1rem;}.nav-btn{font-size:.62rem;}.hero-buttons{gap:12px;}.primary-btn,.secondary-btn{width:auto;padding:14px 18px;font-size:.63rem;}.about{padding:80px 7%;}.features{grid-template-columns:1fr;}}
+.page-intro{min-height:100svh;padding:180px 8% 80px;display:grid;place-content:center;gap:22px;background:radial-gradient(circle at 72% 20%,rgba(200,164,99,.18),transparent 32%),#0b0a08;}
+.page-intro p{color:var(--gold);font-size:.72rem;letter-spacing:.25em;}.page-intro h1{font-family:'Playfair Display',serif;font-size:clamp(3.5rem,9vw,7.5rem);font-weight:600;letter-spacing:-.045em;}.page-intro span{max-width:620px;color:var(--muted);font-size:1.05rem;line-height:1.8;}.page-intro .primary-btn{width:max-content;margin-top:12px;}
+.page-content{max-width:1280px;margin:0 auto;padding:clamp(80px,10vw,140px) 8%;}.page-content h2{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.5rem);font-weight:600;line-height:1.05;margin:14px 0 24px;}.page-content p{color:var(--muted);line-height:1.8;}.eyebrow{color:var(--gold)!important;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;}.split,.film-feature,.contact-panel{display:grid;grid-template-columns:1fr 1fr;gap:clamp(38px,8vw,100px);align-items:center;}.split img,.film-feature video{width:100%;min-height:420px;object-fit:cover;box-shadow:18px 18px 0 rgba(200,164,99,.13);}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}.offer-card,.pricing-card{border:1px solid rgba(200,164,99,.25);padding:34px;background:#11100d;min-height:210px;}.offer-card h3,.pricing-card h3{font-family:'Playfair Display',serif;font-size:1.65rem;margin:12px 0;}.featured{background:linear-gradient(145deg,rgba(200,164,99,.2),#11100d);border-color:var(--gold);}.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}.portfolio-grid img{width:100%;height:480px;object-fit:cover;filter:saturate(.8);}.portfolio-note{display:grid;place-content:center;padding:50px;background:#12100c;}.center{text-align:center;margin-top:46px;}.contact-actions{display:grid;gap:15px;justify-items:start;}.text-link{color:var(--gold-light);text-decoration:none;letter-spacing:.04em;}@media(max-width:800px){.split,.film-feature,.contact-panel,.info-grid,.portfolio-grid{grid-template-columns:1fr;}.portfolio-grid img{height:360px;}.split img,.film-feature video{min-height:280px;}.page-content{padding-left:7%;padding-right:7%;}}
+.instagram-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:clamp(45px,8vw,110px);align-items:center;padding:clamp(85px,12vw,150px) 8%;background:linear-gradient(125deg,#15110a,#090806);}.instagram-feature h2{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4.8rem);font-weight:600;line-height:1.05;margin:14px 0 24px;}.instagram-feature p:not(.eyebrow){max-width:540px;color:var(--muted);line-height:1.8;margin-bottom:32px;}.instagram-images{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end;}.instagram-images img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.8) contrast(1.06);}.instagram-images img:last-child{transform:translateY(42px);border:10px solid #15110a;}@media(max-width:800px){.instagram-feature{grid-template-columns:1fr;padding:85px 7%;}.instagram-images{max-width:600px;}.instagram-images img:last-child{transform:translateY(20px);}}

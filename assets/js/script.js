@@ -1,4 +1,4 @@
-const header = document.querySelector(".header");
+const header = document.querySelector(".header, .navbar");
 
 window.addEventListener("scroll", () => {
     if (header) {
