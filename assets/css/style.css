@@ -190,7 +190,8 @@ max-width:900px;
 
 }
 
-.hero-content h3{
+.hero-content h3,
+.hero-content h4{
 
 font-size:18px;
 
@@ -754,6 +755,12 @@ font-size:14px;
 }
 
 .navbar{
+    position:static;
+    width:auto;
+    padding:0;
+    z-index:auto;
+    background:transparent;
+    backdrop-filter:none;
     display:flex;
     justify-content:space-between;
     align-items:center;
