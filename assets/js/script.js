@@ -14,6 +14,21 @@ document.querySelectorAll("video[data-background-video]").forEach((video) => {
     video.play().catch(() => {});
 });
 
+const videoPreviews = document.querySelectorAll("video[data-video-preview]");
+if (!isDataSaving && videoPreviews.length) {
+    const previewObserver = new IntersectionObserver((entries) => {
+        entries.forEach(({ target, isIntersecting }) => {
+            if (isIntersecting) {
+                target.play().catch(() => {});
+            } else {
+                target.pause();
+            }
+        });
+    }, { threshold: 0.2 });
+
+    videoPreviews.forEach((video) => previewObserver.observe(video));
+}
+
 const homeEntry = document.querySelector("[data-home-entry]");
 if (homeEntry) {
     homeEntry.addEventListener("click", (event) => {
