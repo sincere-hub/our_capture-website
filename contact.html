@@ -44,12 +44,25 @@
                 <input name="phone" type="tel" autocomplete="tel" required>
             </label>
             <label>Event type
-                <select name="event">
-                    <option>Wedding</option>
-                    <option>Traditional Wedding</option>
-                    <option>Engagement</option>
-                    <option>Other Celebration</option>
+                <select name="event" id="event-type" required>
+                    <option value="Events / Celebrations" data-min-hours="2" data-max-hours="12">Events / Celebrations — 2–12 hours</option>
+                    <option value="White Wedding" data-min-hours="8" data-max-hours="12">White Wedding — 8–12 hours</option>
+                    <option value="Traditional Wedding" data-min-hours="4" data-max-hours="12">Traditional Wedding — 4–12 hours</option>
                 </select>
+            </label>
+            <label>Coverage duration
+                <select name="hours" id="event-hours" aria-describedby="hours-help" required></select>
+                <span class="field-hint" id="hours-help">Select the number of hours you would like us to cover.</span>
+            </label>
+            <label>Coverage required
+                <select name="coverage" required>
+                    <option value="Photography">Photography</option>
+                    <option value="Videography">Videography</option>
+                    <option value="Photography & Videography">Photography &amp; Videography</option>
+                </select>
+            </label>
+            <label>Event location
+                <input name="location" type="text" autocomplete="street-address" placeholder="City or venue" required>
             </label>
             <label>Event date
                 <input name="date" type="date">

@@ -37,6 +37,28 @@ const enquiryForm = document.querySelector("[data-enquiry-form]");
 const formStatus = document.querySelector("[data-form-status]");
 
 if (enquiryForm) {
+    const eventType = enquiryForm.querySelector("#event-type");
+    const hoursSelect = enquiryForm.querySelector("#event-hours");
+    const hoursHelp = enquiryForm.querySelector("#hours-help");
+
+    const updateHourOptions = () => {
+        const selectedEvent = eventType.options[eventType.selectedIndex];
+        const minimumHours = Number(selectedEvent.dataset.minHours);
+        const maximumHours = Number(selectedEvent.dataset.maxHours);
+        const selectedHours = Number(hoursSelect.value);
+
+        hoursSelect.replaceChildren();
+        for (let hours = minimumHours; hours <= maximumHours; hours += 1) {
+            const option = new Option(`${hours} ${hours === 1 ? "hour" : "hours"}`, `${hours} hours`);
+            option.selected = hours === selectedHours || (!selectedHours && hours === minimumHours);
+            hoursSelect.add(option);
+        }
+        hoursHelp.textContent = `${minimumHours}–${maximumHours} hours available for ${selectedEvent.value}.`;
+    };
+
+    eventType.addEventListener("change", updateHourOptions);
+    updateHourOptions();
+
     enquiryForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         const submitButton = enquiryForm.querySelector('button[type="submit"]');
@@ -63,6 +85,9 @@ if (enquiryForm) {
             `Email: ${enquiry.email}`,
             `Phone: ${enquiry.phone}`,
             `Event: ${enquiry.event}`,
+            `Duration: ${enquiry.hours}`,
+            `Coverage: ${enquiry.coverage}`,
+            `Location: ${enquiry.location}`,
             `Date: ${enquiry.date || "Not confirmed yet"}`,
             `Details: ${enquiry.message}`
         ].join("\n");
