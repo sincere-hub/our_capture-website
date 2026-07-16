@@ -982,7 +982,7 @@ body{background:var(--ink);color:#f7f4ee;}
 .nav-menu a{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(247,244,238,.78);}
 .nav-btn{padding:13px 25px;background:transparent;border:1px solid var(--gold);border-radius:0;color:var(--gold-light);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;}
 .nav-btn:hover{background:var(--gold);color:var(--ink);box-shadow:none;}
-.hero{min-height:780px;height:100svh;isolation:isolate;background:#0b0906 center/cover no-repeat url("../images/white weddings/wedding-11.jpg");}
+.hero{min-height:780px;height:100svh;isolation:isolate;background:#0b0906 center/cover no-repeat url("../images/white weddings/wedding-30.jpg");}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 50% 35%,transparent 0,rgba(0,0,0,.18) 38%,rgba(0,0,0,.8) 100%);}
 .hero-content{max-width:1000px;padding-top:80px;}
 .hero-content h3,.hero-content h4{font-size:.73rem;letter-spacing:.28em;color:var(--gold-light);}
@@ -1016,7 +1016,7 @@ body{background:var(--ink);color:#f7f4ee;}
     isolation:isolate;
     overflow:hidden;
     background-color:#161009;
-    background-image:linear-gradient(110deg,rgba(7,6,4,.72),rgba(51,35,15,.3)),url("../images/white weddings/wedding-10.jpg");
+    background-image:linear-gradient(110deg,rgba(7,6,4,.88),rgba(91,64,25,.58));
     background-size:cover;
     background-position:center;
     color:#fff;
@@ -1027,17 +1027,17 @@ body{background:var(--ink);color:#f7f4ee;}
 .primary-btn:hover,.secondary-btn:hover,.nav-btn:hover,.book-btn:hover,.enquiry-form button:hover{
     color:#fff;
     background-color:#161009;
-    background-image:linear-gradient(110deg,rgba(7,6,4,.48),rgba(111,76,25,.16)),url("../images/white weddings/wedding-10.jpg");
+    background-image:linear-gradient(110deg,rgba(7,6,4,.7),rgba(130,90,31,.58));
     transform:translateY(-3px);
     box-shadow:inset 0 0 0 1px rgba(255,255,255,.22),0 16px 34px rgba(0,0,0,.38);
 }
-.secondary-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.76),rgba(51,35,15,.36)),url("../images/white weddings/wedding-11.jpg");}
-.secondary-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.5),rgba(111,76,25,.18)),url("../images/white weddings/wedding-11.jpg");}
+.secondary-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.84),rgba(51,35,15,.52));}
+.secondary-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.62),rgba(130,90,31,.48));}
 
 /* Welcome page */
 .welcome-page{background:#090806;}
-.welcome-hero{position:relative;display:grid;min-height:100svh;overflow:hidden;isolation:isolate;background:center/cover no-repeat url("../images/white weddings/about.jpg");}
-.welcome-hero::before{content:"";position:absolute;inset:-4%;z-index:-2;background:center/cover no-repeat url("../images/white weddings/about.jpg");animation:welcome-drift 18s ease-in-out infinite alternate;}
+.welcome-hero{position:relative;display:grid;min-height:100svh;overflow:hidden;isolation:isolate;background:#090806;}
+.welcome-hero::before{content:"";position:absolute;inset:-4%;z-index:-2;background:none;animation:none;}
 .welcome-veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,4,3,.86),rgba(5,4,3,.32) 66%,rgba(5,4,3,.55)),linear-gradient(0deg,rgba(5,4,3,.72),transparent 42%);}
 .welcome-header{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;align-self:start;padding:28px 8%;}
 .welcome-content{align-self:center;max-width:850px;padding:80px 8% 110px;}
@@ -1066,12 +1066,12 @@ body{background:var(--ink);color:#f7f4ee;}
     z-index:-1;
     background:linear-gradient(90deg,rgba(7,6,5,.88),rgba(7,6,5,.52) 58%,rgba(7,6,5,.72)),linear-gradient(0deg,rgba(7,6,5,.78),transparent 55%);
 }
-.about-page{--page-image:url("../images/white weddings/about.jpg");}
-.services-page{--page-image:url("../images/white weddings/wedding-12.jpg");}
-.photos-page{--page-image:url("../images/white weddings/wedding-4.jpg");}
-.videos-page{--page-image:url("../images/white weddings/wedding-13.jpg");}
-.contact-page{--page-image:url("../images/white weddings/wedding-11.jpg");}
-.pricing-page{--page-image:url("../images/traditional wedding/traditional2jpg.jpg");}
+.about-page{--page-image:url("../images/white weddings/wedding-01.jpg");}
+.services-page{--page-image:url("../images/white weddings/wedding.jpg");}
+.photos-page{--page-image:url("../images/white weddings/wedding-27.JPG");}
+.videos-page{--page-image:url("../images/white weddings/wedding-40.jpg");}
+.contact-page{--page-image:url("../images/white weddings/wedding-29.jpg");}
+.pricing-page{--page-image:url("../images/traditional wedding/traditional5.jpg");}
 
 .film-feature{padding-bottom:70px;}
 .film-feature video,.video-grid video{
@@ -1092,12 +1092,12 @@ body{background:var(--ink);color:#f7f4ee;}
 .video-grid video{aspect-ratio:16 / 10;border:1px solid rgba(200,164,99,.24);box-shadow:16px 16px 0 rgba(200,164,99,.09);}
 
 /* Use existing photographic assets in the button texture. */
-.primary-btn,.nav-btn,.book-btn,.enquiry-form button{background-image:linear-gradient(110deg,rgba(7,6,4,.72),rgba(51,35,15,.3)),url("../images/white weddings/wedding-10.jpg");}
-.primary-btn:hover,.nav-btn:hover,.book-btn:hover,.enquiry-form button:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.48),rgba(111,76,25,.16)),url("../images/white weddings/wedding-10.jpg");}
-.secondary-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.76),rgba(51,35,15,.36)),url("../images/white weddings/wedding-11.jpg");}
-.secondary-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.5),rgba(111,76,25,.18)),url("../images/white weddings/wedding-11.jpg");}
-.nav-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.72),rgba(51,35,15,.3)),url("../images/white weddings/wedding-11.jpg");}
-.nav-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.48),rgba(111,76,25,.16)),url("../images/white weddings/wedding-11.jpg");}
+.primary-btn,.nav-btn,.book-btn,.enquiry-form button{background-image:linear-gradient(110deg,rgba(7,6,4,.88),rgba(91,64,25,.58));}
+.primary-btn:hover,.nav-btn:hover,.book-btn:hover,.enquiry-form button:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.7),rgba(130,90,31,.58));}
+.secondary-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.84),rgba(51,35,15,.52));}
+.secondary-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.62),rgba(130,90,31,.48));}
+.nav-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.88),rgba(91,64,25,.58));}
+.nav-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.7),rgba(130,90,31,.58));}
 
 @media(max-width:900px){
     .header{padding:15px 5%;}
@@ -1197,10 +1197,11 @@ body{background:var(--ink);color:#f7f4ee;}
 /* Smaller hero images keep mobile page backgrounds light and quick to paint. */
 @media(max-width:700px){
     .hero{background-image:url("../images/mobile/wedding-11-mobile.jpg");}
-    .about-page{--page-image:url("../images/mobile/about-mobile.jpg");}
-    .services-page{--page-image:url("../images/mobile/wedding-12-mobile.jpg");}
-    .photos-page{--page-image:url("../images/mobile/wedding-4-mobile.jpg");}
-    .videos-page{--page-image:url("../images/mobile/wedding-13-mobile.jpg");}
+    .hero-video{animation:none;object-position:center;}
+    .about-page{--page-image:url("../images/white weddings/wedding-01.jpg");}
+    .services-page{--page-image:url("../images/white weddings/wedding.jpg");}
+    .photos-page{--page-image:url("../images/white weddings/wedding-27.JPG");}
+    .videos-page{--page-image:url("../images/white weddings/wedding-40.jpg");}
     .contact-page{--page-image:url("../images/mobile/wedding-11-mobile.jpg");}
-    .pricing-page{--page-image:url("../images/mobile/traditional2-mobile.jpg");}
+    .pricing-page{--page-image:url("../images/traditional wedding/traditional5.jpg");}
 }
