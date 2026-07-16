@@ -1004,7 +1004,7 @@ body{background:var(--ink);color:#f7f4ee;}
 @media (max-width:520px){.logo{font-size:1.1rem;}.nav-btn{font-size:.62rem;}.hero-buttons{gap:12px;}.primary-btn,.secondary-btn{width:auto;padding:14px 18px;font-size:.63rem;}.about{padding:80px 7%;}.features{grid-template-columns:1fr;}}
 .page-intro{min-height:100svh;padding:180px 8% 80px;display:grid;place-content:center;gap:22px;background:radial-gradient(circle at 72% 20%,rgba(200,164,99,.18),transparent 32%),#0b0a08;}
 .page-intro p{color:var(--gold);font-size:.72rem;letter-spacing:.25em;}.page-intro h1{font-family:'Playfair Display',serif;font-size:clamp(3.5rem,9vw,7.5rem);font-weight:600;letter-spacing:-.045em;}.page-intro span{max-width:620px;color:var(--muted);font-size:1.05rem;line-height:1.8;}.page-intro .primary-btn{width:max-content;margin-top:12px;}
-.page-content{max-width:1280px;margin:0 auto;padding:clamp(80px,10vw,140px) 8%;}.page-content h2{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.5rem);font-weight:600;line-height:1.05;margin:14px 0 24px;}.page-content p{color:var(--muted);line-height:1.8;}.eyebrow{color:var(--gold)!important;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;}.split,.film-feature,.contact-panel{display:grid;grid-template-columns:1fr 1fr;gap:clamp(38px,8vw,100px);align-items:center;}.split img,.film-feature video{width:100%;min-height:420px;object-fit:cover;box-shadow:18px 18px 0 rgba(200,164,99,.13);}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}.offer-card,.pricing-card{border:1px solid rgba(200,164,99,.25);padding:34px;background:#11100d;min-height:210px;}.offer-card h3,.pricing-card h3{font-family:'Playfair Display',serif;font-size:1.65rem;margin:12px 0;}.featured{background:linear-gradient(145deg,rgba(200,164,99,.2),#11100d);border-color:var(--gold);}.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}.portfolio-grid img{width:100%;height:480px;object-fit:cover;filter:saturate(.8);}.portfolio-note{display:grid;place-content:center;padding:50px;background:#12100c;}.center{text-align:center;margin-top:46px;}.contact-actions{display:grid;gap:15px;justify-items:start;}.text-link{color:var(--gold-light);text-decoration:none;letter-spacing:.04em;}@media(max-width:800px){.split,.film-feature,.contact-panel,.info-grid,.portfolio-grid{grid-template-columns:1fr;}.portfolio-grid img{height:360px;}.split img,.film-feature video{min-height:280px;}.page-content{padding-left:7%;padding-right:7%;}}
+.page-content{max-width:1280px;margin:0 auto;padding:clamp(80px,10vw,140px) 8%;}.page-content h2{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.5rem);font-weight:600;line-height:1.05;margin:14px 0 24px;}.page-content p{color:var(--muted);line-height:1.8;}.eyebrow{color:var(--gold)!important;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;}.split,.film-feature,.contact-panel{display:grid;grid-template-columns:1fr 1fr;gap:clamp(38px,8vw,100px);align-items:center;}.split img,.film-feature video{width:100%;min-height:420px;object-fit:cover;box-shadow:18px 18px 0 rgba(200,164,99,.13);}.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}.offer-card,.pricing-card{border:1px solid rgba(200,164,99,.25);padding:34px;background:#11100d;min-height:210px;}.offer-card h3,.pricing-card h3{font-family:'Playfair Display',serif;font-size:1.65rem;margin:12px 0;}.featured{background:linear-gradient(145deg,rgba(200,164,99,.2),#11100d);border-color:var(--gold);}.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}.portfolio-grid img{width:100%;height:480px;object-fit:cover;filter:saturate(.8);}.portfolio-note{display:grid;place-content:center;padding:50px;background:#12100c;}.center{text-align:center;margin-top:46px;}.contact-actions{display:grid;gap:15px;justify-items:start;}.text-link{color:var(--gold-light);text-decoration:none;letter-spacing:.04em;}@media(max-width:800px){.split,.film-feature,.contact-panel,.info-grid,.portfolio-grid{grid-template-columns:1fr;}.portfolio-grid img{height:360px;}.split img,.film-feature video{min-height:280px;}.page-content{padding-left:7%;padding-right:7%;}}
 .instagram-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:clamp(45px,8vw,110px);align-items:center;padding:clamp(85px,12vw,150px) 8%;background:linear-gradient(125deg,#15110a,#090806);}.instagram-feature h2{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4.8rem);font-weight:600;line-height:1.05;margin:14px 0 24px;}.instagram-feature p:not(.eyebrow){max-width:540px;color:var(--muted);line-height:1.8;margin-bottom:32px;}.instagram-images{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end;}.instagram-images img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.8) contrast(1.06);}.instagram-images img:last-child{transform:translateY(42px);border:10px solid #15110a;}@media(max-width:800px){.instagram-feature{grid-template-columns:1fr;padding:85px 7%;}.instagram-images{max-width:600px;}.instagram-images img:last-child{transform:translateY(20px);}}
 .enquiry-form{display:grid;gap:16px;padding:clamp(24px,4vw,42px);background:#12100c;border:1px solid rgba(200,164,99,.28);}.enquiry-form label{display:grid;gap:8px;color:var(--gold-light);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;}.enquiry-form input,.enquiry-form select,.enquiry-form textarea{width:100%;padding:14px;border:1px solid rgba(255,255,255,.16);border-radius:0;background:#090806;color:#f7f4ee;font:inherit;letter-spacing:normal;text-transform:none;}.enquiry-form textarea{resize:vertical;}.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{outline:1px solid var(--gold);border-color:var(--gold);}.enquiry-form button{border:0;cursor:pointer;text-align:center;}.enquiry-form button:disabled{cursor:wait;opacity:.7;}.form-status{min-height:1.5em;margin:0;color:var(--gold-light);font-size:.85rem;line-height:1.5;}
 
@@ -1014,7 +1014,7 @@ body{background:var(--ink);color:#f7f4ee;}
     isolation:isolate;
     overflow:hidden;
     background-color:#161009;
-    background-image:linear-gradient(110deg,rgba(7,6,4,.72),rgba(51,35,15,.3)),url("../images/gallery1.jpg");
+    background-image:linear-gradient(110deg,rgba(7,6,4,.72),rgba(51,35,15,.3)),url("../images/white weddings/wedding-10.jpg");
     background-size:cover;
     background-position:center;
     color:#fff;
@@ -1025,29 +1025,162 @@ body{background:var(--ink);color:#f7f4ee;}
 .primary-btn:hover,.secondary-btn:hover,.nav-btn:hover,.book-btn:hover,.enquiry-form button:hover{
     color:#fff;
     background-color:#161009;
-    background-image:linear-gradient(110deg,rgba(7,6,4,.48),rgba(111,76,25,.16)),url("../images/gallery1.jpg");
+    background-image:linear-gradient(110deg,rgba(7,6,4,.48),rgba(111,76,25,.16)),url("../images/white weddings/wedding-10.jpg");
     transform:translateY(-3px);
     box-shadow:inset 0 0 0 1px rgba(255,255,255,.22),0 16px 34px rgba(0,0,0,.38);
 }
-.secondary-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.76),rgba(51,35,15,.36)),url("../images/gallery2.jpg");}
-.secondary-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.5),rgba(111,76,25,.18)),url("../images/gallery2.jpg");}
+.secondary-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.76),rgba(51,35,15,.36)),url("../images/white weddings/wedding-11.jpg");}
+.secondary-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.5),rgba(111,76,25,.18)),url("../images/white weddings/wedding-11.jpg");}
 
 /* Welcome page */
 .welcome-page{background:#090806;}
-.welcome-hero{position:relative;display:grid;min-height:100svh;overflow:hidden;isolation:isolate;background:center/cover no-repeat url("../images/about.jpg");}
-.welcome-hero::before{content:"";position:absolute;inset:-4%;z-index:-2;background:center/cover no-repeat url("../images/about.jpg");animation:welcome-drift 18s ease-in-out infinite alternate;}
+.welcome-hero{position:relative;display:grid;min-height:100svh;overflow:hidden;isolation:isolate;background:center/cover no-repeat url("../images/white weddings/about.jpg");}
+.welcome-hero::before{content:"";position:absolute;inset:-4%;z-index:-2;background:center/cover no-repeat url("../images/white weddings/about.jpg");animation:welcome-drift 18s ease-in-out infinite alternate;}
 .welcome-veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,4,3,.86),rgba(5,4,3,.32) 66%,rgba(5,4,3,.55)),linear-gradient(0deg,rgba(5,4,3,.72),transparent 42%);}
 .welcome-header{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;align-self:start;padding:28px 8%;}
 .welcome-content{align-self:center;max-width:850px;padding:80px 8% 110px;}
 .welcome-content h1{max-width:760px;margin:18px 0 22px;font-family:'Playfair Display',serif;font-size:clamp(3.9rem,8.5vw,8rem);font-weight:600;line-height:.95;letter-spacing:-.055em;}
 .welcome-copy{max-width:560px;color:rgba(247,244,238,.84);font-size:clamp(1rem,1.7vw,1.23rem);line-height:1.75;}
 .welcome-actions{justify-content:flex-start;margin-top:38px;}
-.welcome-scroll{position:absolute;right:8%;bottom:32px;display:flex;align-items:center;gap:11px;color:#f7f4ee;text-decoration:none;font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;}
-.welcome-scroll span{color:var(--gold-light);font-size:1.5rem;line-height:1;animation:welcome-bob 1.8s ease-in-out infinite;}
 @keyframes welcome-drift{from{transform:scale(1.01)}to{transform:scale(1.09)}}
-@keyframes welcome-bob{50%{transform:translateY(6px)}}
-@media(max-width:700px){.welcome-header{padding:22px 7%;}.welcome-header .nav-btn{padding:11px 14px;font-size:.6rem;}.welcome-content{padding:100px 7% 125px;}.welcome-content h1{font-size:clamp(3.35rem,15vw,5.4rem);}.welcome-actions{align-items:stretch;}.welcome-scroll{right:7%;bottom:24px;}}
+@media(max-width:700px){.welcome-header{padding:22px 7%;}.welcome-header .nav-btn{padding:11px 14px;font-size:.6rem;}.welcome-content{padding:100px 7% 125px;}.welcome-content h1{font-size:clamp(3.35rem,15vw,5.4rem);}.welcome-actions{align-items:stretch;}}
 .welcome-hero{background:#090806;}.welcome-hero::before{background:none;animation:none;}.welcome-video{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.08) brightness(.72);}
 .photo-categories{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}.photo-category{min-height:540px;display:grid;grid-template-rows:58% 42%;background:#12100c;overflow:hidden;border:1px solid rgba(200,164,99,.2);}.photo-category img{width:100%;height:100%;object-fit:cover;filter:saturate(.82);transition:transform .5s ease;}.photo-category:hover img{transform:scale(1.05);}.photo-category>div{padding:30px;}.photo-category h2{font-size:clamp(1.9rem,3vw,2.7rem);margin:12px 0;}.photo-category p{color:var(--muted);line-height:1.7;}.photo-category-text{display:block;background:linear-gradient(145deg,rgba(200,164,99,.18),#12100c);}.photo-category-text>div{height:100%;display:grid;align-content:center;}.photo-category .primary-btn{width:max-content;margin-top:24px;}@media(max-width:900px){.photo-categories{grid-template-columns:1fr;}.photo-category{min-height:440px;grid-template-rows:55% 45%;}}
 .photo-stack{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:1fr 1fr;gap:4px;padding:0!important;overflow:hidden;}.photo-stack img:first-child{grid-row:1 / span 2;}.photo-stack img{min-height:0;}
 .photo-category-text{display:grid;}.photo-category-text>div{height:auto;display:block;}
+
+/* Premium page imagery and responsive media */
+.inner-page .page-intro{
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+    background:center/cover no-repeat var(--page-image);
+}
+.inner-page .page-intro::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    background:linear-gradient(90deg,rgba(7,6,5,.88),rgba(7,6,5,.52) 58%,rgba(7,6,5,.72)),linear-gradient(0deg,rgba(7,6,5,.78),transparent 55%);
+}
+.about-page{--page-image:url("../images/white weddings/about.jpg");}
+.services-page{--page-image:url("../images/white weddings/wedding-12.jpg");}
+.photos-page{--page-image:url("../images/white weddings/wedding-4.jpg");}
+.videos-page{--page-image:url("../images/white weddings/wedding-13.jpg");}
+.contact-page{--page-image:url("../images/white weddings/wedding-11.jpg");}
+.pricing-page{--page-image:url("../images/traditional wedding/traditional2jpg.jpg");}
+
+.film-feature{padding-bottom:70px;}
+.film-feature video,.video-grid video{
+    display:block;
+    width:100%;
+    background:#050504;
+    object-fit:cover;
+}
+.film-feature video{aspect-ratio:16 / 10;min-height:0;}
+.video-collection{
+    max-width:1280px;
+    margin:0 auto;
+    padding:30px 8% clamp(90px,12vw,150px);
+}
+.collection-heading{max-width:600px;margin-bottom:42px;}
+.collection-heading h2{margin-top:12px;font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:600;line-height:1.05;}
+.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.video-grid video{aspect-ratio:16 / 10;border:1px solid rgba(200,164,99,.24);box-shadow:16px 16px 0 rgba(200,164,99,.09);}
+
+/* Use existing photographic assets in the button texture. */
+.primary-btn,.nav-btn,.book-btn,.enquiry-form button{background-image:linear-gradient(110deg,rgba(7,6,4,.72),rgba(51,35,15,.3)),url("../images/white weddings/wedding-10.jpg");}
+.primary-btn:hover,.nav-btn:hover,.book-btn:hover,.enquiry-form button:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.48),rgba(111,76,25,.16)),url("../images/white weddings/wedding-10.jpg");}
+.secondary-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.76),rgba(51,35,15,.36)),url("../images/white weddings/wedding-11.jpg");}
+.secondary-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.5),rgba(111,76,25,.18)),url("../images/white weddings/wedding-11.jpg");}
+.nav-btn{background-image:linear-gradient(110deg,rgba(7,6,4,.72),rgba(51,35,15,.3)),url("../images/white weddings/wedding-11.jpg");}
+.nav-btn:hover{background-image:linear-gradient(110deg,rgba(7,6,4,.48),rgba(111,76,25,.16)),url("../images/white weddings/wedding-11.jpg");}
+
+@media(max-width:900px){
+    .header{padding:15px 5%;}
+    .navbar{flex-wrap:wrap;gap:12px;}
+    .nav-menu{display:flex;order:3;width:100%;gap:22px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none;}
+    .nav-menu::-webkit-scrollbar{display:none;}
+    .nav-menu li{flex:0 0 auto;}
+    .nav-menu a{font-size:.62rem;white-space:nowrap;}
+    .page-intro{min-height:78svh;padding:180px 7% 72px;}
+    .video-grid{grid-template-columns:1fr;gap:18px;}
+    .video-collection{padding-left:7%;padding-right:7%;}
+    .film-feature{padding-bottom:45px;}
+}
+@media(max-width:520px){
+    .header{padding:13px 5%;}
+    .navbar{gap:8px;}
+    .nav-menu{gap:17px;margin-top:0;}
+    .page-intro h1{font-size:clamp(3.1rem,15vw,4.6rem);}
+    .page-intro span{font-size:.95rem;}
+    .photo-category{min-height:420px;}
+    .photo-category>div{padding:24px;}
+    .video-grid video{box-shadow:9px 9px 0 rgba(200,164,99,.09);}
+}
+
+/* Editorial photo gallery */
+.photo-editorial{display:grid;gap:clamp(24px,4vw,58px);}
+.photo-editorial figure{margin:0;overflow:hidden;background:#12100c;}
+.photo-editorial img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.84) contrast(1.04);transition:transform .8s cubic-bezier(.2,.75,.25,1),filter .5s ease;}
+.photo-editorial figure:hover img{transform:scale(1.045);filter:saturate(1) contrast(1.05);}
+.photo-feature{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(300px,.78fr);align-items:end;gap:clamp(28px,6vw,90px);}
+.photo-feature-image{aspect-ratio:4 / 5;box-shadow:22px 22px 0 rgba(200,164,99,.14);}
+.photo-feature-copy{padding:clamp(18px,3vw,40px) 0 clamp(18px,5vw,66px);}
+.photo-number{display:block;margin:24px 0 10px;color:rgba(240,217,162,.45);font-family:'Playfair Display',serif;font-size:1.1rem;letter-spacing:.14em;}
+.photo-editorial h2{max-width:630px;margin:0 0 22px;font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,5.1rem);font-weight:600;line-height:.98;letter-spacing:-.045em;}
+.photo-editorial p:not(.eyebrow){max-width:480px;color:var(--muted);line-height:1.8;}
+.white-wedding-pair{display:grid;grid-template-columns:1fr 1.32fr;gap:clamp(14px,2vw,28px);margin-left:auto;width:min(77%,900px);}
+.white-wedding-pair figure:first-child{aspect-ratio:1 / 1.18;align-self:end;}
+.white-wedding-pair figure:last-child{aspect-ratio:1 / 1.35;}
+.photo-stories{display:grid;gap:clamp(70px,12vw,160px);padding-top:clamp(35px,8vw,100px);}
+.photo-story{display:grid;align-items:center;gap:clamp(28px,6vw,90px);}
+.traditional-story{grid-template-columns:minmax(0,1fr) minmax(300px,.8fr);}
+.traditional-story figure{aspect-ratio:1.18 / 1;}
+.event-story{grid-template-columns:minmax(260px,.95fr) minmax(180px,.62fr) minmax(220px,.8fr);align-items:end;}
+.event-story>div{padding-bottom:clamp(10px,3vw,46px);}
+.event-story figure:nth-of-type(1){aspect-ratio:1 / 1.28;}
+.event-story figure:nth-of-type(2){aspect-ratio:1 / 1.48;transform:translateY(52px);box-shadow:16px 16px 0 rgba(200,164,99,.13);}
+.event-story .primary-btn{display:inline-block;margin-top:26px;}
+.collection-grid{display:grid;gap:clamp(10px,1.6vw,22px);}
+.collection-grid figure{min-height:0;}
+.white-collection{grid-template-columns:1.05fr .8fr 1.12fr .85fr;grid-template-rows:270px 270px;}
+.white-collection figure:nth-child(1){grid-row:1 / span 2;}
+.white-collection figure:nth-child(3){grid-row:1 / span 2;}
+.white-collection figure:nth-child(5){grid-column:3 / span 2;}
+.traditional-collection{grid-template-columns:1.15fr .85fr 1fr;}
+.traditional-collection figure{aspect-ratio:1 / 1.25;}
+.traditional-collection figure:nth-child(2){transform:translateY(42px);}
+.event-collection{grid-template-columns:1fr .82fr 1.12fr;grid-template-rows:250px 250px;}
+.event-collection figure:nth-child(1){grid-row:1 / span 2;}
+.event-collection figure:nth-child(4){grid-row:1 / span 2;}
+.event-collection figure:nth-child(5){grid-column:2 / span 2;}
+@media(max-width:800px){
+    .photo-feature,.traditional-story{grid-template-columns:1fr;gap:28px;}
+    .photo-feature-copy{padding:0;}
+    .photo-feature-image{aspect-ratio:4 / 4.7;}
+    .white-wedding-pair{width:100%;}
+    .photo-stories{gap:85px;}
+    .event-story{grid-template-columns:1fr 1fr;gap:14px;}
+    .event-story>div{grid-column:1 / -1;padding-bottom:16px;}
+    .event-story figure:nth-of-type(2){transform:translateY(26px);}
+    .white-collection{grid-template-rows:210px 210px;}
+    .traditional-collection figure:nth-child(2){transform:translateY(24px);}
+    .event-collection{grid-template-rows:190px 190px;}
+}
+@media(max-width:520px){
+    .photo-editorial{gap:28px;}
+    .photo-editorial h2{font-size:clamp(2.45rem,12vw,3.7rem);}
+    .white-wedding-pair{gap:10px;}
+    .event-story{gap:10px;}
+    .event-story figure:nth-of-type(2){box-shadow:9px 9px 0 rgba(200,164,99,.13);}
+    .white-collection{grid-template-columns:1fr 1fr;grid-template-rows:190px 190px 190px;}
+    .white-collection figure:nth-child(1){grid-row:1 / span 2;}
+    .white-collection figure:nth-child(3){grid-row:auto;}
+    .white-collection figure:nth-child(5){grid-column:auto;}
+    .traditional-collection{grid-template-columns:1fr 1fr;}
+    .traditional-collection figure:last-child{grid-column:1 / -1;aspect-ratio:1.5 / 1;}
+    .event-collection{grid-template-columns:1fr 1fr;grid-template-rows:175px 175px 175px;}
+    .event-collection figure:nth-child(1),.event-collection figure:nth-child(4){grid-row:auto;}
+    .event-collection figure:nth-child(5){grid-column:auto;}
+}
