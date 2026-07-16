@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="prefetch" href="index.html" as="document">
+    <link rel="preload" as="image" href="assets/images/mobile/wedding-11-mobile.jpg" media="(max-width: 700px)">
+    <link rel="preload" as="image" href="assets/images/white weddings/wedding-11.jpg" media="(min-width: 701px)">
     <title>Welcome | Our Capture</title>
 </head>
 <body class="welcome-page">
@@ -24,7 +27,7 @@
             <h1>Welcome to the art of remembering.</h1>
             <p class="welcome-copy">Refined photography and cinematic videos for the moments that deserve to live forever.</p>
             <div class="hero-buttons welcome-actions">
-                <a class="primary-btn" href="index.html">Enter our world</a>
+                <a class="primary-btn" href="index.html" data-home-entry>Enter our world</a>
             </div>
         </section>
     </main>

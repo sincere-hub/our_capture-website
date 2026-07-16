@@ -982,7 +982,7 @@ body{background:var(--ink);color:#f7f4ee;}
 .nav-menu a{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(247,244,238,.78);}
 .nav-btn{padding:13px 25px;background:transparent;border:1px solid var(--gold);border-radius:0;color:var(--gold-light);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;}
 .nav-btn:hover{background:var(--gold);color:var(--ink);box-shadow:none;}
-.hero{min-height:780px;height:100svh;isolation:isolate;}
+.hero{min-height:780px;height:100svh;isolation:isolate;background:#0b0906 center/cover no-repeat url("../images/white weddings/wedding-11.jpg");}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 50% 35%,transparent 0,rgba(0,0,0,.18) 38%,rgba(0,0,0,.8) 100%);}
 .hero-content{max-width:1000px;padding-top:80px;}
 .hero-content h3,.hero-content h4{font-size:.73rem;letter-spacing:.28em;color:var(--gold-light);}
@@ -1045,6 +1045,7 @@ body{background:var(--ink);color:#f7f4ee;}
 @keyframes welcome-drift{from{transform:scale(1.01)}to{transform:scale(1.09)}}
 @media(max-width:700px){.welcome-header{padding:22px 7%;}.welcome-header .nav-btn{padding:11px 14px;font-size:.6rem;}.welcome-content{padding:100px 7% 125px;}.welcome-content h1{font-size:clamp(3.35rem,15vw,5.4rem);}.welcome-actions{align-items:stretch;}}
 .welcome-hero{background:#090806;}.welcome-hero::before{background:none;animation:none;}.welcome-video{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.08) brightness(.72);}
+.welcome-page{opacity:1;transition:opacity .26s ease,transform .26s ease;}.welcome-page.page-leaving{opacity:0;transform:scale(1.008);}
 .photo-categories{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}.photo-category{min-height:540px;display:grid;grid-template-rows:58% 42%;background:#12100c;overflow:hidden;border:1px solid rgba(200,164,99,.2);}.photo-category img{width:100%;height:100%;object-fit:cover;filter:saturate(.82);transition:transform .5s ease;}.photo-category:hover img{transform:scale(1.05);}.photo-category>div{padding:30px;}.photo-category h2{font-size:clamp(1.9rem,3vw,2.7rem);margin:12px 0;}.photo-category p{color:var(--muted);line-height:1.7;}.photo-category-text{display:block;background:linear-gradient(145deg,rgba(200,164,99,.18),#12100c);}.photo-category-text>div{height:100%;display:grid;align-content:center;}.photo-category .primary-btn{width:max-content;margin-top:24px;}@media(max-width:900px){.photo-categories{grid-template-columns:1fr;}.photo-category{min-height:440px;grid-template-rows:55% 45%;}}
 .photo-stack{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:1fr 1fr;gap:4px;padding:0!important;overflow:hidden;}.photo-stack img:first-child{grid-row:1 / span 2;}.photo-stack img{min-height:0;}
 .photo-category-text{display:grid;}.photo-category-text>div{height:auto;display:block;}
@@ -1187,6 +1188,7 @@ body{background:var(--ink);color:#f7f4ee;}
 
 /* Smaller hero images keep mobile page backgrounds light and quick to paint. */
 @media(max-width:700px){
+    .hero{background-image:url("../images/mobile/wedding-11-mobile.jpg");}
     .about-page{--page-image:url("../images/mobile/about-mobile.jpg");}
     .services-page{--page-image:url("../images/mobile/wedding-12-mobile.jpg");}
     .photos-page{--page-image:url("../images/mobile/wedding-4-mobile.jpg");}

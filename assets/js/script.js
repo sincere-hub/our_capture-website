@@ -14,6 +14,19 @@ document.querySelectorAll("video[data-background-video]").forEach((video) => {
     video.play().catch(() => {});
 });
 
+const homeEntry = document.querySelector("[data-home-entry]");
+if (homeEntry) {
+    homeEntry.addEventListener("click", (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+        event.preventDefault();
+        document.body.classList.add("page-leaving");
+        window.setTimeout(() => {
+            window.location.assign(homeEntry.href);
+        }, 260);
+    });
+}
+
 window.addEventListener("scroll", () => {
     if (header) {
         header.classList.toggle("scrolled", window.scrollY > 40);
