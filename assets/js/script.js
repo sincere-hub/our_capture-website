@@ -6,7 +6,8 @@ const isDataSaving = navigator.connection?.saveData || ["slow-2g", "2g"].include
 const isMobile = window.matchMedia("(max-width: 700px)").matches;
 
 document.querySelectorAll("video[data-background-video]").forEach((video) => {
-    if (isDataSaving || isMobile) return;
+    const shouldUseStillHero = isDataSaving || (isMobile && video.classList.contains("hero-video"));
+    if (shouldUseStillHero) return;
 
     const source = document.createElement("source");
     source.src = video.dataset.backgroundVideo;
