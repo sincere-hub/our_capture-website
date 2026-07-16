@@ -37,6 +37,10 @@ const enquiryForm = document.querySelector("[data-enquiry-form]");
 const formStatus = document.querySelector("[data-form-status]");
 
 if (enquiryForm) {
+    const emailInput = enquiryForm.querySelector('input[name="email"]');
+    const emailFeedback = enquiryForm.querySelector("#email-feedback");
+    const phoneInput = enquiryForm.querySelector('input[name="phone"]');
+    const phoneFeedback = enquiryForm.querySelector("#phone-feedback");
     const eventType = enquiryForm.querySelector("#event-type");
     const hoursSelect = enquiryForm.querySelector("#event-hours");
     const hoursHelp = enquiryForm.querySelector("#hours-help");
@@ -58,6 +62,40 @@ if (enquiryForm) {
 
     eventType.addEventListener("change", updateHourOptions);
     updateHourOptions();
+
+    const validateEmail = () => {
+        if (!emailInput.value) {
+            emailInput.removeAttribute("aria-invalid");
+            emailFeedback.textContent = "";
+            return;
+        }
+
+        const isInvalid = !emailInput.validity.valid;
+        emailInput.setAttribute("aria-invalid", String(isInvalid));
+        emailFeedback.textContent = isInvalid ? "Enter a valid email address, for example name@example.com." : "";
+    };
+
+    emailInput.addEventListener("input", validateEmail);
+    emailInput.addEventListener("blur", validateEmail);
+
+    const validatePhone = () => {
+        const phone = phoneInput.value.trim();
+        if (!phone) {
+            phoneInput.setCustomValidity("");
+            phoneInput.removeAttribute("aria-invalid");
+            phoneFeedback.textContent = "";
+            return;
+        }
+
+        const digits = phone.replace(/\D/g, "");
+        const isValid = /^[+\d\s()-]+$/.test(phone) && digits.length >= 9 && digits.length <= 15;
+        phoneInput.setCustomValidity(isValid ? "" : "Enter a valid phone number.");
+        phoneInput.setAttribute("aria-invalid", String(!isValid));
+        phoneFeedback.textContent = isValid ? "" : "Enter a valid phone number using 9–15 digits.";
+    };
+
+    phoneInput.addEventListener("input", validatePhone);
+    phoneInput.addEventListener("blur", validatePhone);
 
     enquiryForm.addEventListener("submit", async (event) => {
         event.preventDefault();
