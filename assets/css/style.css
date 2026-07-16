@@ -1184,3 +1184,13 @@ body{background:var(--ink);color:#f7f4ee;}
     .event-collection figure:nth-child(1),.event-collection figure:nth-child(4){grid-row:auto;}
     .event-collection figure:nth-child(5){grid-column:auto;}
 }
+
+/* Smaller hero images keep mobile page backgrounds light and quick to paint. */
+@media(max-width:700px){
+    .about-page{--page-image:url("../images/mobile/about-mobile.jpg");}
+    .services-page{--page-image:url("../images/mobile/wedding-12-mobile.jpg");}
+    .photos-page{--page-image:url("../images/mobile/wedding-4-mobile.jpg");}
+    .videos-page{--page-image:url("../images/mobile/wedding-13-mobile.jpg");}
+    .contact-page{--page-image:url("../images/mobile/wedding-11-mobile.jpg");}
+    .pricing-page{--page-image:url("../images/mobile/traditional2-mobile.jpg");}
+}

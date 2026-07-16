@@ -2,6 +2,20 @@ import { saveEnquiry } from "./firebase.js";
 
 const header = document.querySelector(".header, .navbar");
 
+const isDataSaving = navigator.connection?.saveData || ["slow-2g", "2g"].includes(navigator.connection?.effectiveType);
+const isMobile = window.matchMedia("(max-width: 700px)").matches;
+
+document.querySelectorAll("video[data-background-video]").forEach((video) => {
+    if (isDataSaving || isMobile) return;
+
+    const source = document.createElement("source");
+    source.src = video.dataset.backgroundVideo;
+    source.type = "video/mp4";
+    video.append(source);
+    video.load();
+    video.play().catch(() => {});
+});
+
 window.addEventListener("scroll", () => {
     if (header) {
         header.classList.toggle("scrolled", window.scrollY > 40);
